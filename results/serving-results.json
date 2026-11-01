@@ -1,0 +1,74 @@
+{
+  "skew": {
+    "clients": 3000,
+    "max_abs_difference": 0.0
+  },
+  "leakage": {
+    "auc_point_in_time": 0.7185225845231121,
+    "auc_with_future_data": 0.938998813298237
+  },
+  "model_auc": {
+    "logistic": 0.7185225845231121,
+    "boosted": 0.7795559372682688,
+    "weak_baseline": 0.6190709200265356
+  },
+  "drift": {
+    "psi_real": {
+      "limit_balance": 0.0,
+      "age": 0.0,
+      "last_pay_status": 0.004607792316890036,
+      "max_pay_status_window": 0.010935586779815022,
+      "mean_bill_window": 0.007747665616255303,
+      "payment_ratio_window": 0.01931924928076691,
+      "utilization_last": 0.01720384961458573,
+      "bill_trend_window": 0.0124057394026158
+    },
+    "alerts_real": [],
+    "psi_injected_mean_bill": {
+      "1.5": 0.09910201467453959,
+      "2.0": 0.2304333745473448,
+      "3.0": 0.4943039988133403
+    },
+    "alerts_injected": {
+      "1.5": [],
+      "2.0": [
+        "mean_bill_window"
+      ],
+      "3.0": [
+        "mean_bill_window"
+      ]
+    },
+    "threshold": 0.2
+  },
+  "routing": {
+    "arm_accuracy": [
+      0.8878,
+      0.8909333333333334,
+      0.7320333333333333
+    ],
+    "regret_thompson_mean": 18.06666666666491,
+    "regret_uniform_mean": 259.66666666665,
+    "regret_thompson": [
+      26.666666666664696,
+      26.66666666666457,
+      12.666666666664955,
+      22.666666666665147,
+      1.6666666666651841
+    ],
+    "regret_uniform": [
+      280.6666666666519,
+      258.6666666666507,
+      232.66666666665407,
+      273.66666666665316,
+      252.66666666664014
+    ]
+  },
+  "api": {
+    "requests": 300,
+    "logged_rows": 600,
+    "rows_without_model_version": 0,
+    "unknown_client_status": 404,
+    "p50_ms": 9.60687000042526,
+    "p95_ms": 12.218847044277938
+  }
+}

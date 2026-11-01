@@ -1,0 +1,13 @@
+[project]
+name = "ml-feature-serving"
+version = "0.1.0"
+description = "Point-in-time correct features shared by training and serving, a scoring API with traceable predictions, drift checks and bandit traffic allocation, measured on public credit data."
+requires-python = ">=3.12"
+dependencies = ["pandas>=2.2", "numpy>=1.26", "scikit-learn>=1.5", "scipy>=1.11", "fastapi>=0.110", "httpx>=0.27", "xlrd>=2.0"]
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
